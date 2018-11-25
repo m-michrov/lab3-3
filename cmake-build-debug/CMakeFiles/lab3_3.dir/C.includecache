@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CLionProjects/lab3-3/hsort.c
+sort.h
+E:/CLionProjects/lab3-3/sort.h
+
+E:/CLionProjects/lab3-3/qsort.c
+sort.h
+E:/CLionProjects/lab3-3/sort.h
+
+E:/CLionProjects/lab3-3/sort.h
+
