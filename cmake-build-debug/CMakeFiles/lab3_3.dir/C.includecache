@@ -10,6 +10,18 @@ E:/CLionProjects/lab3-3/hsort.c
 sort.h
 E:/CLionProjects/lab3-3/sort.h
 
+E:/CLionProjects/lab3-3/io.h
+stdio.h
+-
+malloc.h
+-
+
+E:/CLionProjects/lab3-3/main.c
+io.h
+E:/CLionProjects/lab3-3/io.h
+sort.h
+E:/CLionProjects/lab3-3/sort.h
+
 E:/CLionProjects/lab3-3/qsort.c
 sort.h
 E:/CLionProjects/lab3-3/sort.h

@@ -11,15 +11,15 @@ void swapValues(
 
 void quickSort(
         int * array,
-        unsigned int left,
-        unsigned int right)
+        int left,
+        int right)
 {
     if (left < right) {
 
-        int pivot = array[(left + right) / 2];
+        int i = left,
+            j = right;
 
-        unsigned int i = left,
-                     j = right;
+        int pivot = array[(left + right) / 2];
 
         while (1) {
             while (array[i] < pivot)

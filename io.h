@@ -4,7 +4,7 @@
 #define LAB3_3_IO_H
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <malloc.h>
 
 void getValues(
         int * array,

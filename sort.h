@@ -9,13 +9,13 @@ void swapValues(
 
 void shift(
         int *array,
-        int i,
+        unsigned int i,
         unsigned int length);
 
 void quickSort(
         int * array,
-        unsigned int left,
-        unsigned int right);
+        int left,
+        int right);
 
 void heapSort(
         int * array,

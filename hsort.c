@@ -2,14 +2,14 @@
 
 void shift(
         int *array,
-        int i,
+        unsigned int i,
         unsigned int length)
 {
-    int max_child;
+    unsigned int max_child;
 
-    while (i * 2 + 1 < (int)length) {
+    while (i * 2 + 1 < length) {
 
-        if ((i * 2 + 1 == (int)length - 1) || (array[i * 2 + 1] > array[i * 2 + 2]))
+        if ((i * 2 + 1 == length - 1) || (array[i * 2 + 1] > array[i * 2 + 2]))
             max_child = i * 2 + 1;
 
         else
@@ -30,11 +30,11 @@ void heapSort(
         unsigned int length)
 {
     for (int i = length / 2 - 1; i >= 0; i--) {
-        shift(array, i, length);
+        shift(array, (unsigned int)i, length);
     }
 
     for (int i = length - 1; i > 0; i--) {
         swapValues(&array[0], &array[i]);
-        shift(array, 0, i);
+        shift(array, 0, (unsigned int)i);
     }
 }

@@ -11,7 +11,7 @@ int main(void)
 
     getValues(array, count);
 
-    heapSort(array, count);
+    quickSort(array, 0, count - 1);
 
     printValues(array, count);
 
