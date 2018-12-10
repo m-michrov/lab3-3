@@ -7,7 +7,7 @@ void swapValues(
         int *x,
         int *y);
 
-void shift(
+void sift(
         int *array,
         unsigned int i,
         unsigned int length);

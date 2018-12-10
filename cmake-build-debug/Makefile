@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "E:\CLion 2018.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "E:\CLion 2018.2.3\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\CLionProjects\lab3-3
+CMAKE_SOURCE_DIR = H:\NSUProgLabs\sort
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\CLionProjects\lab3-3\cmake-build-debug
+CMAKE_BINARY_DIR = H:\NSUProgLabs\sort\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = E:\CLionProjects\lab3-3\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"E:\CLion 2018.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2018.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"E:\CLion 2018.2.3\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2018.2.1\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CLionProjects\lab3-3\cmake-build-debug\CMakeFiles E:\CLionProjects\lab3-3\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start H:\NSUProgLabs\sort\cmake-build-debug\CMakeFiles H:\NSUProgLabs\sort\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CLionProjects\lab3-3\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start H:\NSUProgLabs\sort\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab3_3
+# Target rules for targets named sort
 
 # Build rule for target.
-lab3_3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 lab3_3
-.PHONY : lab3_3
+sort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 sort
+.PHONY : sort
 
 # fast build rule for target.
-lab3_3/fast:
-	$(MAKE) -f CMakeFiles\lab3_3.dir\build.make CMakeFiles/lab3_3.dir/build
-.PHONY : lab3_3/fast
+sort/fast:
+	$(MAKE) -f CMakeFiles\sort.dir\build.make CMakeFiles/sort.dir/build
+.PHONY : sort/fast
 
 hsort.obj: hsort.c.obj
 
@@ -128,7 +128,7 @@ hsort.obj: hsort.c.obj
 
 # target to build an object file
 hsort.c.obj:
-	$(MAKE) -f CMakeFiles\lab3_3.dir\build.make CMakeFiles/lab3_3.dir/hsort.c.obj
+	$(MAKE) -f CMakeFiles\sort.dir\build.make CMakeFiles/sort.dir/hsort.c.obj
 .PHONY : hsort.c.obj
 
 hsort.i: hsort.c.i
@@ -137,7 +137,7 @@ hsort.i: hsort.c.i
 
 # target to preprocess a source file
 hsort.c.i:
-	$(MAKE) -f CMakeFiles\lab3_3.dir\build.make CMakeFiles/lab3_3.dir/hsort.c.i
+	$(MAKE) -f CMakeFiles\sort.dir\build.make CMakeFiles/sort.dir/hsort.c.i
 .PHONY : hsort.c.i
 
 hsort.s: hsort.c.s
@@ -146,7 +146,7 @@ hsort.s: hsort.c.s
 
 # target to generate assembly for a file
 hsort.c.s:
-	$(MAKE) -f CMakeFiles\lab3_3.dir\build.make CMakeFiles/lab3_3.dir/hsort.c.s
+	$(MAKE) -f CMakeFiles\sort.dir\build.make CMakeFiles/sort.dir/hsort.c.s
 .PHONY : hsort.c.s
 
 main.obj: main.c.obj
@@ -155,7 +155,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\lab3_3.dir\build.make CMakeFiles/lab3_3.dir/main.c.obj
+	$(MAKE) -f CMakeFiles\sort.dir\build.make CMakeFiles/sort.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -164,7 +164,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\lab3_3.dir\build.make CMakeFiles/lab3_3.dir/main.c.i
+	$(MAKE) -f CMakeFiles\sort.dir\build.make CMakeFiles/sort.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -173,7 +173,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\lab3_3.dir\build.make CMakeFiles/lab3_3.dir/main.c.s
+	$(MAKE) -f CMakeFiles\sort.dir\build.make CMakeFiles/sort.dir/main.c.s
 .PHONY : main.c.s
 
 qsort.obj: qsort.c.obj
@@ -182,7 +182,7 @@ qsort.obj: qsort.c.obj
 
 # target to build an object file
 qsort.c.obj:
-	$(MAKE) -f CMakeFiles\lab3_3.dir\build.make CMakeFiles/lab3_3.dir/qsort.c.obj
+	$(MAKE) -f CMakeFiles\sort.dir\build.make CMakeFiles/sort.dir/qsort.c.obj
 .PHONY : qsort.c.obj
 
 qsort.i: qsort.c.i
@@ -191,7 +191,7 @@ qsort.i: qsort.c.i
 
 # target to preprocess a source file
 qsort.c.i:
-	$(MAKE) -f CMakeFiles\lab3_3.dir\build.make CMakeFiles/lab3_3.dir/qsort.c.i
+	$(MAKE) -f CMakeFiles\sort.dir\build.make CMakeFiles/sort.dir/qsort.c.i
 .PHONY : qsort.c.i
 
 qsort.s: qsort.c.s
@@ -200,7 +200,7 @@ qsort.s: qsort.c.s
 
 # target to generate assembly for a file
 qsort.c.s:
-	$(MAKE) -f CMakeFiles\lab3_3.dir\build.make CMakeFiles/lab3_3.dir/qsort.c.s
+	$(MAKE) -f CMakeFiles\sort.dir\build.make CMakeFiles/sort.dir/qsort.c.s
 .PHONY : qsort.c.s
 
 # Help Target
@@ -209,7 +209,7 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... lab3_3
+	@echo ... sort
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... hsort.obj

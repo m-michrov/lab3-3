@@ -38,10 +38,9 @@ void quickSort(
             j--;
         }
 
-        if (i < right)
-            quickSort(array, i, right);
-        if (j > left)
-            quickSort(array, left, j);
+        quickSort(array, i, right);
+
+        quickSort(array, left, j);
 
     }
 }

@@ -13,6 +13,8 @@ int main(void)
 
     quickSort(array, 0, count - 1);
 
+    //heapSort(array, count);
+
     printValues(array, count);
 
 

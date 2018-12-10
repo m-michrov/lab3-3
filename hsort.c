@@ -1,6 +1,6 @@
 #include "sort.h"
 
-void shift(
+void sift(
         int *array,
         unsigned int i,
         unsigned int length)
@@ -30,11 +30,11 @@ void heapSort(
         unsigned int length)
 {
     for (int i = length / 2 - 1; i >= 0; i--) {
-        shift(array, (unsigned int)i, length);
+        sift(array, (unsigned int) i, length);
     }
 
     for (int i = length - 1; i > 0; i--) {
         swapValues(&array[0], &array[i]);
-        shift(array, 0, (unsigned int)i);
+        sift(array, 0, (unsigned int) i);
     }
 }
